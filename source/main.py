@@ -29,7 +29,8 @@ def main():
 
     print(db_manager.get_vacancies_with_higher_salary())
 
-    print(db_manager.get_vacancies_with_keyword('python'))
+    key_word = input('Введие название вакнии.\n:')
+    print(db_manager.get_vacancies_with_keyword(key_word))
 
 
 if __name__ == '__main__':
